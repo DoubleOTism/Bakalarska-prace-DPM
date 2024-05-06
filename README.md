@@ -27,12 +27,13 @@ Propojení storage probíhá pomocí
 ```
 php artisan storage:link
 ```
-
-Následně je potřeba vyplnit databázi, je potřeba využít export ze souboru STRUCTURE_REQUIRED.SQL, přičemž název databáze je laravel.
 Pro spuštění scheduleru použijte příkaz
 ```
 * * * * * cd /cesta/k/aplikaci && php artisan schedule:run >> /dev/null 2>&1
 ```
+
+Pro vytvoření základní tabulkové struktury lze využít soubor DB_TEMPLATE.SQL. Jedná se o export prázdné databáze, který lze naimportovat po manuálním vytvoření databáze "laravel".
+
 
 
 
